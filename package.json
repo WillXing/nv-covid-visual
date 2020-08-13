@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@nivo/bar": "^0.62.0",
+    "@nivo/pie": "^0.62.0",
     "next": "^9.5.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
