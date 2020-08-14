@@ -6,6 +6,4 @@ COPY . ./
 
 RUN npm ci
 
-RUN npm run build
-
-ENTRYPOINT ["npm", "start"]
+CMD npm run build ; npm start
