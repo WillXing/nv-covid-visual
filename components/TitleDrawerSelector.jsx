@@ -1,15 +1,23 @@
-import Button from "@material-ui/core/Button";
+import Fab from "@material-ui/core/Fab";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Drawer from "@material-ui/core/Drawer";
 import ListItemText from "@material-ui/core/ListItemText";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
 import { useState } from "react";
 
 const TitleDrawerSelector = ({ titles, title, setTitle }) => {
   const [showDrawer, setShowDrawer] = useState(false);
   return (
     <React.Fragment>
-      <Button onClick={() => setShowDrawer(true)}>{title.label}</Button>
+      <Fab
+        style={{ margin: "8px" }}
+        variant="extended"
+        onClick={() => setShowDrawer(true)}
+      >
+        <MoreVertIcon />
+        {title.label}
+      </Fab>
       <Drawer
         anchor="bottom"
         open={showDrawer}
