@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TitleDrawerSelector from "./TitleDrawerSelector";
 import DetailChart from "./DetailChart";
-import rawData from "../data/data.json";
+import rawData from "../public/data.json";
 
 const ConfirmedCase = () => {
   const [title, setTitle] = useState({
