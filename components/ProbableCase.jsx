@@ -1,6 +1,6 @@
 import { useState } from "react";
 import TitleDrawerSelector from "./TitleDrawerSelector";
-import DetailChart from "./DetailChart";
+import CaseDetailChart from "./CaseDetailChart";
 import rawData from "../public/data.json";
 
 const ProbableCase = () => {
@@ -21,7 +21,7 @@ const ProbableCase = () => {
     <React.Fragment>
       <TitleDrawerSelector titles={titles} title={title} setTitle={setTitle} />
       <div style={{ height: "600px" }}>
-        <DetailChart
+        <CaseDetailChart
           chartType={title.chartType}
           aggregationKey={title.keyword}
           rawData={rawData.probableCases}

@@ -32,7 +32,7 @@ const TitleDrawerSelector = ({ titles, title, setTitle }) => {
             {titles.map((title, index) => (
               <ListItem
                 button
-                key={title.keyword}
+                key={title.keyword + index}
                 onClick={() => setTitle(title)}
               >
                 <ListItemText primary={title.label} />
